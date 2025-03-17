@@ -3,7 +3,10 @@ services:
     cap_add:
     - CAP_SYS_TTY_CONFIG
     command:
-    - --tty=/dev/tty7
+    - >
+      /usr/bin/entry.sh --tty=/dev/tty7 &
+      sleep 1 &&
+      weston-simple-shm | weston-simple-egl | weston-simple-damage | weston-flower
     device_cgroup_rules:
     - c 4:* rmw
     - c 13:* rmw
