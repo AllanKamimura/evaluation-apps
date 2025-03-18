@@ -1,0 +1,30 @@
+services:
+  weston:
+    cap_add:
+    - CAP_SYS_TTY_CONFIG
+    command:
+    - '/usr/bin/entry.sh --tty=/dev/tty7 --developer -- --debug & sleep 5 && weston-simple-shm | weston-simple-egl
+      | weston-simple-damage | weston-flower
+
+      '
+    device_cgroup_rules:
+    - c 4:* rmw
+    - c 13:* rmw
+    - c 226:* rmw
+    entrypoint:
+    - /bin/sh
+    - -c
+    image: torizon/weston-am62@sha256:ded14c38171722dd327ed8cea44310ad793e9e263451729701a99540fae27880
+    network_mode: host
+    platform: linux/arm64
+    volumes:
+    - source: /tmp
+      target: /tmp
+      type: bind
+    - source: /dev
+      target: /dev
+      type: bind
+    - source: /run/udev
+      target: /run/udev
+      type: bind
+version: '3'
