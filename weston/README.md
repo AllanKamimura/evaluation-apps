@@ -1,12 +1,12 @@
 # Weston Desktop Environment #
 
-![Torizon Version](https://img.shields.io/badge/Torizon_OS-7.1.0-blue?logo=torizon) 
+[![Torizon Version](https://img.shields.io/badge/Torizon_OS-7.1.0-blue?logo=torizon)](https://artifacts.toradex.com/artifactory/torizoncore-oe-prod-frankfurt/scarthgap-7.x.y/release/4/)
 &nbsp;
-![Torizon Container](https://img.shields.io/badge//torizon/weston-4.4.0-blue?logo=docker)
+[![Torizon Container](https://img.shields.io/badge//torizon/weston-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston/4.4.0/images/sha256-6cd07ffe969873ff20bd8e170c9ff8b82bff670f5c387909406037fbea0cd379)
 &nbsp;
-![Torizon Container](https://img.shields.io/badge//torizon/weston--vivante-4.4.0-blue?logo=docker)
+[![Torizon Container](https://img.shields.io/badge//torizon/weston--imx8-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston-imx8/4.4.0/images/sha256-35c886b7fbd305122d46511de3d4d26bc21b13e41add6e94c9f718d0f21526b0)
 &nbsp;
-![Torizon Container](https://img.shields.io/badge//torizon/weston--am62-4.4.0-blue?logo=docker)
+[![Torizon Container](https://img.shields.io/badge//torizon/weston--am62-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston-am62/4.4.0/images/sha256-5adfecadba6086368eacb0f58fd916f75e6faef977c58a38b16efe9062a63c35)
 
 This app starts a standalone instance of Weston from where you can launch other applications like the weston-terminal Terminal Emulator.
 
