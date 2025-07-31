@@ -1,20 +1,23 @@
 # Weston Desktop Environment #
 
 [![Torizon Version](https://img.shields.io/badge/Torizon_OS-7.1.0-blue?logo=torizon)](https://artifacts.toradex.com/artifactory/torizoncore-oe-prod-frankfurt/scarthgap-7.x.y/release/4/)
-&nbsp;
-[![Torizon Container](https://img.shields.io/badge//torizon/weston-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston/4.4.0/images/sha256-6cd07ffe969873ff20bd8e170c9ff8b82bff670f5c387909406037fbea0cd379)
-&nbsp;
-[![Torizon Container](https://img.shields.io/badge//torizon/weston--imx8-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston-imx8/4.4.0/images/sha256-35c886b7fbd305122d46511de3d4d26bc21b13e41add6e94c9f718d0f21526b0)
-&nbsp;
-[![Torizon Container](https://img.shields.io/badge//torizon/weston--am62-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston-am62/4.4.0/images/sha256-5adfecadba6086368eacb0f58fd916f75e6faef977c58a38b16efe9062a63c35)
 
-This app starts a standalone instance of Weston from where you can launch other applications like the weston-terminal Terminal Emulator.
+### Weston Containers
+
+| Platform | Container                                                                                                                                                                                                                          |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Generic  | [![weston](https://img.shields.io/badge/torizon/weston-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston/4.4.0/images/sha256-6cd07ffe969873ff20bd8e170c9ff8b82bff670f5c387909406037fbea0cd379)                 |
+| i.MX8    | [![weston-imx8](https://img.shields.io/badge/torizon/weston--imx8-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston-imx8/4.4.0/images/sha256-35c886b7fbd305122d46511de3d4d26bc21b13e41add6e94c9f718d0f21526b0) |
+| AM62     | [![weston-am62](https://img.shields.io/badge/torizon/weston--am62-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston-am62/4.4.0/images/sha256-5adfecadba6086368eacb0f58fd916f75e6faef977c58a38b16efe9062a63c35) |
+
+
+This app starts a standalone instance of **Weston** from where you can launch other applications like the weston-terminal **Terminal Emulator.**
 
 ![Screenshot](https://docs1.toradex.com/116545-demogalleryweston.png?v=3)
 
 ## About
 
-​Weston is the reference implementation of a Wayland display server protocol,
+**​Weston** is the reference implementation of a Wayland display server protocol,
 essentially the piece of software that makes sure that graphical application can be drawn alongside each other, superimposed and organized in windows.
 
 To access the Weston demo apps, you can enter the running container and check for the weston commands.
