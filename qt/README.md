@@ -1,20 +1,29 @@
 # Qt #
 
-![Torizon Version](https://img.shields.io/badge/Torizon_OS-7.1.0-blue?logo=torizon)
-&nbsp;
-![Torizon Container](https://img.shields.io/badge//allanktoradex/cppqmltemplate--upstream-torizon--7-blue?logo=docker)
-&nbsp;
-![Torizon Container](https://img.shields.io/badge//allanktoradex/cppqmltemplate--imx8-torizon--7-blue?logo=docker)
-&nbsp;
-![Torizon Container](https://img.shields.io/badge//allanktoradex/cppqmltemplate--am62-torizon--7-blue?logo=docker)
+[![Torizon Version](https://img.shields.io/badge/Torizon_OS-7.1.0-blue?logo=torizon)](https://artifacts.toradex.com/artifactory/torizoncore-oe-prod-frankfurt/scarthgap-7.x.y/release/4/)
 
-Deploy a simple Qt QML application (in C++) in a Weston environment. It creates a window and displays an animation with the Torizon icon using the Weston container as the Wayland compositor.
+### Weston Containers
+| Platform | Container                                                                                                                                                                                                                          |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Upstream  | [![weston](https://img.shields.io/badge/torizon/weston-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston/4.4.0/images/sha256-6cd07ffe969873ff20bd8e170c9ff8b82bff670f5c387909406037fbea0cd379)                 |
+| i.MX8    | [![weston-imx8](https://img.shields.io/badge/torizon/weston--imx8-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston-imx8/4.4.0/images/sha256-35c886b7fbd305122d46511de3d4d26bc21b13e41add6e94c9f718d0f21526b0) |
+| AM62     | [![weston-am62](https://img.shields.io/badge/torizon/weston--am62-4.4.0-blue?logo=docker)](https://hub.docker.com/layers/torizon/weston-am62/4.4.0/images/sha256-5adfecadba6086368eacb0f58fd916f75e6faef977c58a38b16efe9062a63c35) |
+
+### Qt Template Containers
+| Platform | Container                                                                                                                                                                                                                                                                           |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Upstream | [![cppqml-upstream](https://img.shields.io/badge/allanktoradex/cppqmltemplate--upstream-torizon--7-blue?logo=docker)](https://hub.docker.com/layers/allanktoradex/cppqmltemplate-upstream/torizon-7/images/sha256-9f5f2168805905b2d3a2d1b42bbc631ac3cfefb5a67995105e1884ff809e2d14) |
+| i.MX8    | [![cppqml-imx8](https://img.shields.io/badge/allanktoradex/cppqmltemplate--imx8-torizon--7-blue?logo=docker)](https://hub.docker.com/layers/allanktoradex/cppqmltemplate-imx8/torizon-7/images/sha256-122075a08234ef1347556bfe0572e51f9421fd14c812443270f348ea25a1f22b)             |
+| AM62     | [![cppqml-am62](https://img.shields.io/badge/allanktoradex/cppqmltemplate--am62-torizon--7-blue?logo=docker)](https://hub.docker.com/layers/allanktoradex/cppqmltemplate-am62/torizon-7/images/sha256-cf8f5bc706588b511ee635c62b6e438f3aa10877efbcaa0f5da73f957e0cedfa)             |
+
+
+Deploy a simple **Qt QML application (in C++)** in a **Weston** environment. It creates a window and displays an animation with the Torizon icon using the Weston container as the Wayland compositor.
 
 ![Screenshot](https://docs1.toradex.com/116544-demogalleryqt.png?v=2)
 
 ## About
 
-Qt is a popular cross-platform framework for developing (GUIs). It provides a rich set of libraries and tools to help developing high-performance applications.
+**Qt** is a popular cross-platform framework for developing **(GUIs)**. It provides a rich set of libraries and tools to help developing high-performance applications.
 
 The source code of this application is available on the [Torizon Samples](https://github.com/toradex/vscode-torizon-templates/tree/dev/cppQML) repository.
 

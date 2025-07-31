@@ -14,7 +14,7 @@ services:
     entrypoint:
     - /bin/sh
     - -c
-    image: torizon/weston@sha256:2edb0354e0c26db992d095db71ff8b1d4ff3879f1bc0e19d534062f48ce05684
+    image: torizon/weston:4.4.0
     network_mode: host
     platform: linux/arm/v7
     volumes:
