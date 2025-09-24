@@ -1,0 +1,67 @@
+{
+  "packages": [
+    {
+      "name": "react_vite-apalis-imx6",
+      "filename": "docker-compose-upstream.yml",
+      "version": "torizon-7",
+      "icon": "icon.png",
+      "description": "README.md"
+    },
+    {
+      "name": "react_vite-apalis-imx8",
+      "filename": "docker-compose-imx8.yml",
+      "version": "torizon-7",
+      "icon": "icon.png",
+      "description": "README.md"
+    },
+    {
+      "name": "react_vite-colibri-imx6",
+      "filename": "docker-compose-upstream.yml",
+      "version": "torizon-7",
+      "icon": "icon.png",
+      "description": "README.md"
+    },
+    {
+      "name": "react_vite-colibri-imx6ull",
+      "filename": "docker-compose-upstream.yml",
+      "version": "torizon-7",
+      "icon": "icon.png",
+      "description": "README.md"
+    },
+    {
+      "name": "react_vite-colibri-imx7",
+      "filename": "docker-compose-colibri-upstream.yml",
+      "version": "torizon-7",
+      "icon": "icon.png",
+      "description": "README.md"
+    },
+    {
+      "name": "react_vite-colibri-imx8x",
+      "filename": "docker-compose-imx8.yml",
+      "version": "torizon-7",
+      "icon": "icon.png",
+      "description": "README.md"
+    },
+    {
+      "name": "react_vite-verdin-am62",
+      "filename": "docker-compose-am62.yml",
+      "version": "torizon-7",
+      "icon": "icon.png",
+      "description": "README.md"
+    },
+    {
+      "name": "react_vite-verdin-imx8mm",
+      "filename": "docker-compose-imx8.yml",
+      "version": "torizon-7",
+      "icon": "icon.png",
+      "description": "README.md"
+    },
+    {
+      "name": "react_vite-verdin-imx8mp",
+      "filename": "docker-compose-imx8.yml",
+      "version": "torizon-7",
+      "icon": "icon.png",
+      "description": "README.md"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  weston:
+    image: torizon/weston-imx8:4.8.0
+    command: --developer -- --debug
+    cap_add:
+      - CAP_SYS_TTY_CONFIG
+    network_mode: host
+    device_cgroup_rules:
+      - "c 4:* rmw"
+      - "c 13:* rmw"
+      - "c 226:* rmw"
+      - "c 253:* rmw"
+      - "c 10:223 rmw"
+      - "c 199:0 rmw"
+    volumes:
+      - /dev:/dev
+      - /tmp:/tmp
+      - /run/udev/:/run/udev/
+
+  chromium:
+    command:
+    - http://localhost:5173/
+    image: torizon/chromium-imx8:4.8.0
+    depends_on:
+      - weston
+    network_mode: host
+    security_opt:
+      - seccomp:unconfined
+    shm_size: 256mb
+    device_cgroup_rules:
+      - "c 199:* rmw"
+      - "c 81:* rmw"
+      - "c 234:* rmw"
+      - "c 253:* rmw"
+      - "c 226:* rmw"
+      - "c 235:* rmw"
+    volumes:
+      - /tmp:/tmp
+      - /var/run/dbus:/var/run/dbus
+      - /dev:/dev
+
+  room-booking:
+    image: allanktoradex/booking-rooms-dashboard:latest
+    restart: unless-stopped
+    network_mode: host
+    depends_on:
+      - dummy-backend
+
+  dummy-backend:
+    image: allanktoradex/booking-rooms-server:latest
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
